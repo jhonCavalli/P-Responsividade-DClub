@@ -155,6 +155,54 @@ button:hover {
     }
 }
 
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #9499EA;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: vibrar 0.5s both infinite;
+}
+
+#whatsapp:hover {
+    transform: scale(1.1);
+    color: #7b81e3;
+}
+
+@keyframes vibrar {
+    0% {
+        transform: rotate(1deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    105% {
+        transform: rotate(-2deg);
+    }
+}
+
+.vibrar {
+    animation: vibrar 0.5s both infinite;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #5d5d7d;
+    opacity: 0.5;
+}
+
 @media screen and (max-width:900px) {
     .principal {
         width: 100%;
